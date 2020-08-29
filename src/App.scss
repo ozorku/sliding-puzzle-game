@@ -1,0 +1,46 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+button {
+  margin-top: 20px;
+  height: 30px;
+}
+
+.board {
+  border: 5px solid black;
+  border-radius: 5px;
+  height: 400px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(99px, 1fr));
+  grid-gap: 1px;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  padding: 3px;
+}
+.empty {
+  border: 1px solid red;
+  display: grid;
+  place-items: center;
+}
+
+.cell {
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  transition-duration: 0.3s;
+  &:hover {
+    background: rgb(21, 24, 21);
+    color: white;
+  }
+}
