@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function App() {
   const [shuffledNumbers, setShuffledNumbers] = useState([]);
+
   useEffect(() => {
     shuffleNumbers();
   }, []);
