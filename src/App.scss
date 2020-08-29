@@ -15,7 +15,7 @@ button {
 }
 
 .board {
-  border: 1px solid black;
+  border: 5px solid orange;
   height: 400px;
   width: 400px;
   display: grid;
@@ -23,6 +23,7 @@ button {
   grid-gap: 1;
   font-size: 24px;
   font-weight: bold;
+  background: rgb(204, 204, 204);
 }
 .empty {
   border: 1px solid #000;
@@ -36,7 +37,7 @@ button {
   place-items: center;
   transition-duration: 0.3s;
   &:hover {
-    background: #000;
+    background: rgb(21, 24, 21);
     color: white;
   }
 }
